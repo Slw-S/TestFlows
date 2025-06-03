@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-11-arm
     strategy:
       matrix:
         python-version: ["3.12"]
@@ -23,11 +23,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - uses: ilammy/msvc-dev-cmd@v1.13.0
         with:
-          arch: x64
+          arch: ARM64
       
       - name: Install gdal
         run: |
-          vcpkg install gdal
+          vcpkg install gdal[tools] --triplet arm64-windows
 
       - name: Upload Vcpkg Packages as Artifact
         uses: actions/upload-artifact@v4
