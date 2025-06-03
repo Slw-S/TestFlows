@@ -24,6 +24,19 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1.13.0
         with:
           arch: x64
+      
       - name: Install gdal
         run: |
           vcpkg install gdal
+
+      - name: Upload Vcpkg Packages as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vcpkg-packages
+          path: c:\vcpkg\packages
+        
+      - name: Upload Vcpkg Installed as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vcpkg-installed
+          path: c:\vcpkg\installed
