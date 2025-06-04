@@ -25,9 +25,9 @@ jobs:
         with:
           arch: ARM64
       
-      - name: Install gdal
+      - name: Install proj
         run: |
-          vcpkg install gdal[tools] --triplet arm64-windows
+          vcpkg install proj[tools] --triplet arm64-windows
 
       - name: Upload Vcpkg Packages as Artifact
         uses: actions/upload-artifact@v4
