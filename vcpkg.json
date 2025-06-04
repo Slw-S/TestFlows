@@ -1,0 +1,17 @@
+{
+  "name": "TestFlows",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "name": "proj",
+      "version>=": "9.5.1",
+      "features": ["core", "net", "tiff", "tools"]
+    }
+  ],
+  "overrides": [
+    {
+      "name": "proj",
+      "version": "9.5.1"
+    }
+  ]
+}
