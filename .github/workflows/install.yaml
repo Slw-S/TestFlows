@@ -25,9 +25,8 @@ jobs:
         with:
           arch: ARM64
       
-      - name: Install geos
+      - name: Install all
         run: |
-          vcpkg install geos[tools] --triplet arm64-windows
           vcpkg install proj[tools] --triplet arm64-windows
           vcpkg install gdal[tools] --triplet arm64-windows
 
