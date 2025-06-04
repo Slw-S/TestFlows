@@ -9,10 +9,5 @@
       "features": ["tiff", "tools"]
     }
   ],
-  "overrides": [
-    {
-      "name": "proj",
-      "version": "9.5.1"
-    }
-  ]
+  "builtin-baseline": "4ec74919dbf24931b29347b000c74374e8bbde35"
 }
