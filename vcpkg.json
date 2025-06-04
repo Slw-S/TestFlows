@@ -5,7 +5,8 @@
     {
       "name": "proj",
       "version>=": "9.5.1",
-      "features": ["core", "net", "tiff", "tools"]
+      "default-features":false,
+      "features": ["tiff", "tools"]
     }
   ],
   "overrides": [
