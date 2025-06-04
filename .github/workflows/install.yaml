@@ -27,8 +27,7 @@ jobs:
       
       - name: Install all
         run: |
-          vcpkg install proj[tools] --triplet arm64-windows
-          vcpkg install gdal[tools] --triplet arm64-windows
+          vcpkg install proj[core,net,tiff,tools]:arm64-windows@9.5.1
 
       - name: Upload Vcpkg Packages as Artifact
         uses: actions/upload-artifact@v4
