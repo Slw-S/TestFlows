@@ -6,7 +6,7 @@
       "name": "proj",
       "version>=": "9.5.1",
       "default-features":false,
-      "features": ["tiff", "tools"]
+      "features": ["net", "tiff", "tools"]
     }
   ],
   "builtin-baseline": "4ec74919dbf24931b29347b000c74374e8bbde35"
